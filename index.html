@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="assets/css/vendors/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/vendors/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
-    
-    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="assets/js/vendors/slick.min.js"></script>
     <script src="/assets/js/vendors/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    
   </head>
   <body>
     <section id="header">
@@ -47,24 +47,17 @@
                   <div class="header_right">
                     <ul>
                       <li>
-                        <a class="search-btn bt"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <a>
                           <i class="fa-solid fa-magnifying-glass"></i>
                         </a>
                       </li>
-                      <li class="dropdown"> 
-                       <i class="fa-solid fa-user"></i>
-  
-                          <ul class="dropdown-menu">
-                              <li>
-                                 <a class="dropdown-item" href="my account.html"
-                                   >My Account</a>
-                                    </li>
-                                        <li>
-                                           <a class="dropdown-item" href="login-register.html"
-                                            >Login | Register</a>
-                                         </li>
-                           </ul>
-                       </li>
+                      <li class="nav-item dropdown ">
+                        <a class="nav-link" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user"></i> <span class="sr-only">(current)</span> </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="my account.html">My Account</a>
+                          <a class="dropdown-item" href="login-register.html">Login | Register</a>
+                        </div>
+                      </li>
                       <li>
                         <a href="wishlist.html">
                           <i class="fa-regular fa-heart"></i>
@@ -87,11 +80,13 @@
                                 </div>
                                 <ul class="minicart-list">
                                   <li class="minicart-product d-flex">
-                                    <a href="single-product-variable.html" class="product-item-img">
-                                      <img src="/assets/img/product/1-1-270x300.webp" alt="" />
-                                    </a>
+                                    <div class="minicart-thumb">
+                                      <a href="single-product.html" class="product-item-img">
+                                        <img src="/assets/img/product/1-1-270x300.webp" alt="" />
+                                      </a>
+                                    </div>
                                     <div class="product-item-content">
-                                      <a class="product-item-title" href="single-product-variable.html" >American Marigold</a>
+                                      <h3 class="product-name"><a class="product-item-title" href="single-product.html" >American Marigold</a></h3>
                                       <span class="product-item-quantity">1 x $23.45</span >
                                     </div>
                                     <a class="product-item-remove" href="">
@@ -99,24 +94,28 @@
                                     </a>
                                   </li>
                                   <li class="minicart-product d-flex">
-                                    <a href="single-product-variable.html" class="product-item-img">
-                                      <img src="/assets/img/product/1-1-270x300.webp" alt=""/>
-                                    </a>
+                                    <div class="minicart-thumb">
+                                      <a href="single-product.html" class="product-item-img">
+                                        <img src="/assets/img/product/1-2-270x300.webp" alt="" />
+                                      </a>
+                                    </div>
                                     <div class="product-item-content">
-                                      <a class="product-item-title" href="single-product-variable.html" >American Marigold</a>
-                                      <span class="product-item-quantity" >1 x $23.45</span>
+                                      <h3 class="product-name"><a class="product-item-title" href="single-product.html" >American Marigold</a></h3>
+                                      <span class="product-item-quantity">1 x $23.45</span >
                                     </div>
                                     <a class="product-item-remove" href="">
                                       <i class="fa-solid fa-xmark"></i>
                                     </a>
                                   </li>
                                   <li class="minicart-product d-flex">
-                                    <a  href="single-product-variable.html" class="product-item-img">
-                                      <img src="/assets/img/product/1-1-270x300.webp" alt=""/>
-                                    </a>
+                                    <div class="minicart-thumb">
+                                      <a href="single-product.html" class="product-item-img">
+                                        <img src="/assets/img/product/1-3-270x300.webp" alt="" />
+                                      </a>
+                                    </div>
                                     <div class="product-item-content">
-                                      <a class="product-item-title" href="single-product-variable.html"  >American Marigold</a>
-                                      <span class="product-item-quantity">1 x $23.45</span>
+                                      <h3 class="product-name"><a class="product-item-title" href="single-product.html" >American Marigold</a></h3>
+                                      <span class="product-item-quantity">1 x $23.45</span >
                                     </div>
                                     <a class="product-item-remove" href="">
                                       <i class="fa-solid fa-xmark"></i>
@@ -124,6 +123,14 @@
                                   </li>
                                 </ul>
                               </div>
+                                <div class="minicart-item-total">
+                                  <span>Subtotal</span>
+                                  <span class="amount">$79.35</span>
+                                </div>
+                                <div class="group-btn-wrap">
+                                  <a href="cart.html" class="btn btn-dark">View Cart</a>
+                                  <a href="checkout.html" class="btn btn-dark">Checkout</a>
+                                </div>
                             </div>
                           </div>
                         </div>
@@ -327,6 +334,75 @@
                                   <i class="fa-regular fa-eye"></i>
                                 </a>
                               </li>
+                              <div class="modal" id="quickModal">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- product details inner end -->
+                                            <div class="product-details-inner">
+                                                <div class="row">
+                                                    <div class="col-lg-5">
+                                                        <div class="product-large-slider mb-20">
+                                                            <div class="pro-large-img img-zoom">
+                                                                <img src="assets/img/product/product-details-img1.jpg" alt="product thumb" />
+                                                            </div>
+                                                            <div class="pro-large-img img-zoom">
+                                                                <img src="assets/img/product/product-details-img2.jpg" alt="product thumb"/>
+                                                            </div>
+                                                            <div class="pro-large-img img-zoom">
+                                                                <img src="assets/img/product/product-details-img3.jpg" alt="product thumb"/>
+                                                            </div>
+                                                            <div class="pro-large-img img-zoom">
+                                                                <img src="assets/img/product/product-details-img4.jpg" alt="product thumb"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pro-nav slick-row-5">
+                                                            <div class="pro-nav-thumb"><img src="assets/img/product/product-details-img1.jpg" alt="" /></div>
+                                                            <div class="pro-nav-thumb"><img src="assets/img/product/product-details-img2.jpg" alt="" /></div>
+                                                            <div class="pro-nav-thumb"><img src="assets/img/product/product-details-img3.jpg" alt="" /></div>
+                                                            <div class="pro-nav-thumb"><img src="assets/img/product/product-details-img4.jpg" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-7">
+                                                        <div class="product-details-des">
+                                                            <h3 class="pro-det-title">Primitive Mens Premium Shoes</h3>
+                                                            <div class="pro-review">
+                                                                <span><a href="#">1 Review(s)</a></span>
+                                                            </div>
+                                                            <div class="price-box">
+                                                                <span class="regular-price">$70.00</span>
+                                                                <span class="old-price"><del>$80.00</del></span>
+                                                            </div>
+                                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                                            <div class="quantity-cart-box d-flex align-items-center mb-20">
+                                                                <div class="quantity">
+                                                                    <div class="pro-qty"><input type="text" value="1"></div>
+                                                                </div>
+                                                                <a href="cart.html" class="btn btn-default">Add To Cart</a>
+                                                            </div>
+                                                            <div class="availability mb-20">
+                                                                <h5 class="cat-title">Availability:</h5>
+                                                                <span>In Stock</span>
+                                                            </div>
+                                                            <div class="share-icon">
+                                                                <h5 class="cat-title">Share:</h5>
+                                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- product details inner end -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                               <li>
                                 <a href="cart.html">
                                   <i class="fa-solid fa-cart-shopping"></i>
@@ -2423,6 +2499,95 @@
           </div>
         </div>
       </div>
+      <div class="brand-area-section">
+        <div class="container">
+            <div class="brand-bg">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container">
+                            <div class="brand-carousel">
+                                <div class="brand-item">
+                                    <a  href="">
+                                        <img src="assets/img/brands/1-1.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a href="">
+                                        <img src="assets/img/brands/1-2.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a href="">
+                                        <img src="assets/img/brands/1-3.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a href="">
+                                        <img src="assets/img/brands/1-4.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a href="">
+                                        <img src="assets/img/brands/1-5.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a  href="">
+                                        <img src="assets/img/brands/1-1.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a href="">
+                                        <img src="assets/img/brands/1-2.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a href="">
+                                        <img src="assets/img/brands/1-3.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a href="">
+                                        <img src="assets/img/brands/1-4.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a href="">
+                                        <img src="assets/img/brands/1-5.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a  href="">
+                                        <img src="assets/img/brands/1-1.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a href="">
+                                        <img src="assets/img/brands/1-2.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a href="">
+                                        <img src="assets/img/brands/1-3.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a href="">
+                                        <img src="assets/img/brands/1-4.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="brand-item">
+                                    <a href="">
+                                        <img src="assets/img/brands/1-5.webp" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
     </section>
 
     <section id="footer">
@@ -2526,6 +2691,11 @@
         </div>
       </div>
     </section>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
     <script src="/assets/js/app.js"></script>
   </body>
 </html>

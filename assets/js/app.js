@@ -12,14 +12,45 @@ var count = 1;
       document.getElementById('count').value = count;
     }
   }
-  
 
-  const dropDown = document.querySelector('.dropdown');
-  const dropdownMenu = document.querySelector('.dropdown-menu');
   
-  dropDown.addEventListener('click', function() {
-    dropdownMenu.classList.toggle('show');
-  });
+  
+  var lowerSlider = document.querySelector('#lower');
+  var  upperSlider = document.querySelector('#upper');
+  
+  document.querySelector('#two').value=upperSlider.value;
+  document.querySelector('#one').value=lowerSlider.value;
+  
+  var  lowerVal = parseInt(lowerSlider.value);
+  var upperVal = parseInt(upperSlider.value);
+  
+  upperSlider.oninput = function () {
+      lowerVal = parseInt(lowerSlider.value);
+      upperVal = parseInt(upperSlider.value);
+  
+      if (upperVal < lowerVal + 4) {
+          lowerSlider.value = upperVal - 4;
+          if (lowerVal == lowerSlider.min) {
+          upperSlider.value = 4;
+          }
+      }
+      document.querySelector('#two').value=this.value
+  };
+  
+  lowerSlider.oninput = function () {
+      lowerVal = parseInt(lowerSlider.value);
+      upperVal = parseInt(upperSlider.value);
+      if (lowerVal > upperVal - 4) {
+          upperSlider.value = lowerVal + 4;
+          if (upperVal == upperSlider.max) {
+              lowerSlider.value = parseInt(upperSlider.max) - 4;
+          }
+      }
+      document.querySelector('#one').value=this.value
+  };
+
+
+
 
   $(document).ready(function(){
     $('.slider-for').slick({
@@ -40,64 +71,53 @@ var count = 1;
 
         
       });
-  })
 
+      $('.brand-carousel').slick({
+        autoplay: true,
+        speed: 1000,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        centerMode:false,
+        infinite:true,
+        arrows:false
+        
 
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel( {
+        
+      });
+      $(".owl-carousel").owlCarousel( {
         items:4,
         dots:true,
     });
-
-
-      
-  
-
-   
-
     $('.main-slider-active').slick({
-        fade: true,
-        autoplay: true,
-        speed: 1000,
-        prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
-        responsive: [{
-            breakpoint: 992,
-            settings: {
-                arrows: false,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                dots: false
-            }
-        }]
-    });
-
-    var rangeSlider = $(".price-range"),
-    amount = $("#amount"),
-    minPrice = rangeSlider.data('min'),
-    maxPrice = rangeSlider.data('max');
-    rangeSlider.slider({
-    range: true,
-    min: minPrice,
-    max: maxPrice,
-    values: [minPrice, maxPrice],
-    slide: function (event, ui) {
-        amount.val("$" + ui.values[0] + " - $" + ui.values[1]);
-    }
+      fade: true,
+      autoplay: true,
+      speed: 1000,
+      prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
+      responsive: [{
+          breakpoint: 992,
+          settings: {
+              arrows: false,
+              dots: true
+          }
+      },
+      {
+          breakpoint: 480,
+          settings: {
+              arrows: false,
+              dots: false
+          }
+      }]
   });
-  amount.val(" $" + rangeSlider.slider("values", 0) +
-    " - $" + rangeSlider.slider("values", 1));
+  $('.count').counterUp({
+    delay:10,
+    time:1200
+});
+  })
 
-})
 
- 
 
- 
 
   
  

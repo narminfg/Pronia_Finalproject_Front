@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="assets/css/style.css"/>
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <title>Pronia</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="  crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
     <section id="header">
@@ -17,7 +18,8 @@
               <div class="row align-items-center">
                 <div class="header-top-text">
                   <span class="pronia offer"
-                    >HELLO EVERYONE! 25% Off All Products</span>
+                    >HELLO EVERYONE! 25% Off All Products</span
+                  >
                 </div>
               </div>
             </div>
@@ -44,12 +46,12 @@
                           </a>
                         </li>
                         <li class="nav-item dropdown ">
-                            <a class="nav-link" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user"></i> <span class="sr-only">(current)</span> </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="my account.html">My Account</a>
-                              <a class="dropdown-item" href="login-register.html">Login | Register</a>
-                            </div>
-                          </li>
+                          <a class="nav-link" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user"></i> <span class="sr-only">(current)</span> </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="my account.html">My Account</a>
+                            <a class="dropdown-item" href="login-register.html">Login | Register</a>
+                          </div>
+                        </li>
                         <li>
                           <a href="wishlist.html">
                             <i class="fa-regular fa-heart"></i>
@@ -166,7 +168,6 @@
           </div>
         </div>
       </section>
-
       <main>
         <div class="breadcrumb-area">
             <div class="container">
@@ -178,7 +179,7 @@
                       <li>
                         <a href="index.html">Home</a>
                       </li>
-                      <li>Blog Grid View</li>
+                      <li>Blog Detail</li>
                     </ul>
                   </div>
                 </div>
@@ -188,220 +189,136 @@
           <div class="blog-area-section">
             <div class="container">
                 <div class="row">
-                  <div class="col-lg-8">
-                    <div class="blog-item-wrap">
-                        <div class="col-md-6">
-                            <div class="container">
-                                <div class="blog-item">
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li class="author">
-                                                    <a href="">By: Admin</a>
-                                                </li>
-                                                <li class="date">24 April 2021</li>
-                                            </ul>
-                                        </div>
-                                        <h2 class="title">
-                                            <a href="blog-detail.html">There Many Variations</a>
-                                        </h2>
-                                        <p class="short-desc mt-3">
-                                            Lorem ipsum dolor sit amet, consecteturl adipisl elit,
-                                            sed do eiusmod tempor incidio ut labore et dolore magna aliqua.
-                                        </p>
+                    <div class="col-lg-8">
+                        <div class="blog-detail-item">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li class="author">
+                                            <a href="">By: Admin</a>
+                                        </li>
+                                        <li class="date">24 April 2021</li>
+                                    </ul>
+                                </div>
+                                <h2 class="title">There Many Variations</h2>
+                                <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore etl dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquiex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eukip fugiat
+                                    nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deseruntk mollit anim id est laborum. Sed ut
+                                    perspiciatis unde omnis iste natus error sit voluptatem accusantiumy doloremque
+                                    laudantium, totam rem aperiam,
+                                </p>
+                            </div>
+                            <div class="blog-img">
+                                <img src="assets/img/blog/1-1-310x220.webp" alt="" class="img-full">
+                            </div>
+                            <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore etl dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquiex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eukip fugiat nulla pariatur. Excepteur
+                                sint occaecat.
+                            </p>
+                                <div class="blog-banner">
+                                    <div class="single-img">
+                                        <img src="assets//img/blog/1-2-310x220.webp" class="img-full">
                                     </div>
-                                    <div class="blog-img">
-                                        <a href="blog-detail.html">
-                                            <img class="img-full" src="assets/img/blog/1-1-310x220.webp" alt="">
-                                        </a>
-                                        <div class="inner-btn-wrap">
-                                            <a href="blog-detail.html" class="inner-btn">
-                                                <i class="fa-solid fa-link"></i>
-                                            </a>
-                                        </div>
+                                    <div class="single-img">
+                                        <img src="assets//img/blog/1-3-310x220.webp" class="img-full">
                                     </div>
                                 </div>
-                            </div>
+                                <p class="short-desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore etl dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquiex
+                                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                    dolore eukip fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deseruntk mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+                                    natus error sit voluptatem accusantiumy doloremque laudantium, totam rem aperiam,
+                                
+                                </p>
                         </div>
-                        <div class="col-md-6">
-                            <div class="container">
-                                <div class="blog-item">
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li class="author">
-                                                    <a href="">By: Admin</a>
-                                                </li>
-                                                <li class="date">24 April 2021</li>
-                                            </ul>
-                                        </div>
-                                        <h2 class="title">
-                                            <a href="blog-detail.html">There Many Variations</a>
-                                        </h2>
-                                        <p class="short-desc mt-3">
-                                            Lorem ipsum dolor sit amet, consecteturl adipisl elit,
-                                            sed do eiusmod tempor incidio ut labore et dolore magna aliqua.
-                                        </p>
-                                    </div>
-                                    <div class="blog-img">
-                                        <a href="blog-detail.html">
-                                            <img class="img-full" src="assets/img/blog/1-3-310x220.webp" alt="">
-                                        </a>
-                                        <div class="inner-btn-wrap">
-                                            <a href="blog-detail.html" class="inner-btn">
-                                                <i class="fa-solid fa-link"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                        <div class="blog-comment">
+                            <h4 class="heading">Comments (03)</h4>
+                            <div class="blog-comment-item">
+                                <div class="blog-comment-img">
+                                    <img src="assets/img/about/1-4-270x270.webp" alt="">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="container">
-                                <div class="blog-item">
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li class="author">
-                                                    <a href="">By: Admin</a>
-                                                </li>
-                                                <li class="date">24 April 2021</li>
-                                            </ul>
-                                        </div>
-                                        <h2 class="title">
-                                            <a href="blog-detail.html">There Many Variations</a>
-                                        </h2>
-                                        <p class="short-desc mt-3">
-                                            Lorem ipsum dolor sit amet, consecteturl adipisl elit,
-                                            sed do eiusmod tempor incidio ut labore et dolore magna aliqua.
-                                        </p>
+                                <div class="blog-comment-content">
+                                    <div class="user-meta">
+                                        <h2 class="user-name">Donald Chavez</h2>
+                                        <span class="date">21 July 2021</span>
                                     </div>
-                                    <div class="radio">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/g5_RjKnNjGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="container">
-                              <div class="blog-item">
-                                  <div class="blog-content">
-                                      <div class="blog-meta">
-                                          <ul>
-                                              <li class="author">
-                                                  <a href="">By: Admin</a>
-                                              </li>
-                                              <li class="date">24 April 2021</li>
-                                          </ul>
-                                      </div>
-                                      <h2 class="title">
-                                          <a href="blog-detail.html">There Many Variations</a>
-                                      </h2>
-                                      <p class="short-desc mt-3">
-                                          Lorem ipsum dolor sit amet, consecteturl adipisl elit,
-                                          sed do eiusmod tempor incidio ut labore et dolore magna aliqua.
-                                      </p>
-                                  </div>
-                                  <div class="radio">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MJRSTkHvzLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="container">
-                            <div class="blog-item">
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <ul>
-                                            <li class="author">
-                                                <a href="">By: Admin</a>
-                                            </li>
-                                            <li class="date">24 April 2021</li>
-                                        </ul>
-                                    </div>
-                                    <h2 class="title">
-                                        <a href="blog-detail.html">There Many Variations</a>
-                                    </h2>
-                                    <p class="short-desc mt-3">
-                                        Lorem ipsum dolor sit amet, consecteturl adipisl elit,
-                                        sed do eiusmod tempor incidio ut labore et dolore magna aliqua.
+                                    <p class="user-comment">
+                                            Lorem ipsum dolor sit amet, consectetur adipisi elit, sed
+                                            do eiusmod tempor incidid ut labore etl dolore magna aliqua. Ut enim ad minim
+                                            veniam, quis nostrud exercitati ullamco laboris nisi ut aliquiex ea commodo
+                                            consequat.
                                     </p>
+                                    <a class="comment-btn" href="">Reply</a>
                                 </div>
-                                <div class="blog-img">
-                                    <a href="blog-detail.html">
-                                        <img class="img-full" src="assets/img/blog/1-2-310x220.webp" alt="">
-                                    </a>
-                                    <div class="inner-btn-wrap">
-                                        <a href="blog-detail.html" class="inner-btn">
-                                            <i class="fa-solid fa-link"></i>
-                                        </a>
+                            </div>
+                            <div class="blog-comment-item">
+                                <div class="blog-comment-img">
+                                    <img src="assets/img/about/1-1-270x270.webp" alt="">
+                                </div>
+                                <div class="blog-comment-content">
+                                    <div class="user-meta">
+                                        <h2 class="user-name">Donald Chavez</h2>
+                                        <span class="date">21 July 2021</span>
                                     </div>
+                                    <p class="user-comment">
+                                            Lorem ipsum dolor sit amet, consectetur adipisi elit, sed
+                                            do eiusmod tempor incidid ut labore etl dolore magna aliqua. Ut enim ad minim
+                                            veniam, quis nostrud exercitati ullamco laboris nisi ut aliquiex ea commodo
+                                            consequat.
+                                    </p>
+                                    <a class="comment-btn" href="">Reply</a>
+                                </div>
+                            </div>
+                            <div class="blog-comment-item">
+                                <div class="blog-comment-img">
+                                    <img src="assets/img/about/1-3-270x270.webp" alt="">
+                                </div>
+                                <div class="blog-comment-content">
+                                    <div class="user-meta">
+                                        <h2 class="user-name">Donald Chavez</h2>
+                                        <span class="date">21 July 2021</span>
+                                    </div>
+                                    <p class="user-comment">
+                                            Lorem ipsum dolor sit amet, consectetur adipisi elit, sed
+                                            do eiusmod tempor incidid ut labore etl dolore magna aliqua. Ut enim ad minim
+                                            veniam, quis nostrud exercitati ullamco laboris nisi ut aliquiex ea commodo
+                                            consequat.
+                                    </p>
+                                    <a class="comment-btn" href="">Reply</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                        
-                        <div class="col-md-6">
-                            <div class="container">
-                                <div class="blog-item">
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li class="author">
-                                                    <a href="">By: Admin</a>
-                                                </li>
-                                                <li class="date">24 April 2021</li>
-                                            </ul>
-                                        </div>
-                                        <h2 class="title">
-                                            <a href="blog-detail.html">There Many Variations</a>
-                                        </h2>
-                                        <p class="short-desc mt-3">
-                                            Lorem ipsum dolor sit amet, consecteturl adipisl elit,
-                                            sed do eiusmod tempor incidio ut labore et dolore magna aliqua.
-                                        </p>
+                        <div class="feedback-area">
+                            <h2 class="heading">Leave a comment</h2>
+                            <form class="feedback-form" action="">
+                                <div class="group-input">
+                                    <div class="form-field">
+                                        <input type="text" name="name" placeholder="Your Name" class="input-field">
                                     </div>
-                                    <div class="blog-img">
-                                        <a href="blog-detail.html">
-                                            <img class="img-full" src="assets/img/blog/1-1-310x220.webp" alt="">
-                                        </a>
-                                        <div class="inner-btn-wrap">
-                                            <a href="blog-detail.html" class="inner-btn">
-                                                <i class="fa-solid fa-link"></i>
-                                            </a>
-                                        </div>
+                                    <div class="form-field">
+                                        <input type="text" name="email" placeholder="Your Email" class="input-field">
                                     </div>
                                 </div>
-                            </div>
+                                <div class="form-field">
+                                    <input type="text" name="subject" placeholder="Subject (Optinal)" class="input-field">
+                                </div>
+                                <div class="form-field">
+                                    <textarea name="message" placeholder="Message" class="textarea-field"></textarea>
+                                </div>
+                                <div class="button-wrap">
+                                    <button type="submit" value="submit" name="submit" class="btn-pronia-primary">Post Comment</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="pagination-area">
-                        <nav>
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a class="page-link" href="">
-                                        <i class="fa-solid fa-angles-left"></i>
-                                    </a>
-                                </li>
-                                <li class="page-item active">
-                                    <a class="page-link" href="">1</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="">2</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="">3</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="">
-                                        <i class="fa-solid fa-angles-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
                     <div class="col-lg-4">
                         <div class="sidebar-area">
                           <div class="widgets-searchbox">
@@ -512,12 +429,9 @@
                         </div>
                     </div>
                     
-                    
                 </div>
             </div>
           </div>
-
-
       </main>
       <section id="footer">
         <div class="footer-area">
@@ -625,5 +539,6 @@
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="assets/js/plugins/bootstrap.min.js"></script>
+       <script src="/assets/js/app.js"></script>
 </body>
 </html>
