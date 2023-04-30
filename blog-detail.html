@@ -44,10 +44,17 @@
                     <div class="header_right">
                       <ul>
                         <li>
-                          <a href="">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                          <a href="#">
+                            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
                           </a>
                         </li>
+                        <div id="search-modal">
+                          <form>
+                            <input type="text" placeholder="Search...">
+                            <button class="search-btn" type="submit">Search</button>
+                          </form>
+                          <button id="close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
                         <li class="nav-item dropdown ">
                           <a class="nav-link" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user"></i> <span class="sr-only">(current)</span> </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">

@@ -79,9 +79,24 @@ $(document).ready(function(){
     });
   });
 
- 
+//search
+  $(document).ready(function() {
+    $("#search-icon").click(function() {
+      $("#search-modal").fadeIn();
+    });
+  
+    $("#close").click(function() {
+      $("#search-modal").fadeOut();
+    });
+  });
+  
+  $(document).ready(function() {
+    $('#product-icon').click(function() {
+      $('#product-modal').modal('show');
+    });
 
-
+    
+  });
 
   
   //range filter
@@ -118,6 +133,9 @@ $(document).ready(function(){
       }
       document.querySelector('#one').value=this.value
   };
+
+
+
 
 
 

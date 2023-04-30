@@ -44,12 +44,18 @@
                 </div>
                 <div class="header_right">
                   <ul>
-                    <li>
-                      <a>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <li class="search">
+                      <a href="#">
+                        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
                       </a>
                     </li>
-
+                    <div id="search-modal">
+                      <form>
+                        <input type="text" placeholder="Search...">
+                        <button class="search-btn" type="submit">Search</button>
+                      </form>
+                      <button id="close"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
                     <li class="nav-item dropdown ">
                       <a class="nav-link" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false"><i class="fa-solid fa-user"></i> <span class="sr-only">(current)</span>
@@ -59,7 +65,7 @@
                         <a class="dropdown-item" href="login-register.html">Login | Register</a>
                       </div>
                     </li>
-                    <li>
+                    <li class="wishlist">
                       <a href="wishlist.html">
                         <i class="fa-regular fa-heart"></i>
                       </a>
@@ -142,6 +148,11 @@
                         </div>
                       </div>
                     </div>
+                    <li class="menu">
+                      <a href="">
+                        <i class="fa-solid fa-bars"></i>
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -293,7 +304,7 @@
               <div class="tab-pane fade show active" id="featured-tab-pane" role="tabpanel"
                 aria-labelledby="featured-tab" tabindex="0">
                 <div class="product-item-wrap row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -308,35 +319,44 @@
                               </a>
                             </li>
                             <li>
-                              <a  data-bs-toggle="modal" data-bs-target="#myModal">
+                              <a id="product-icon" href="#">
                                 <i class="fa-regular fa-eye"></i>
                               </a>
                             </li>
-                          
-                          <!-- The Modal -->
-                          <div class="modal" id="myModal">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                          
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                  <h4 class="modal-title">Modal Heading</h4>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            <div id="product-modal" class="modal">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                 
+                                  <div class="modal-header">
+                                    <h4 class="modal-title">Modal Heading</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                  </div>
+                                  
+                                  <div class="modal-body">
+                                    Modal body..
+                                  </div>
+                                  
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                  </div>
                                 </div>
-                          
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                  Modal body..
-                                </div>
-                          
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                </div>
-                          
                               </div>
                             </div>
-                          </div>
+                  
+                   <!-- <button class="primary" onclick="window.dialog.showModal();">Open Dialog</button>
+
+<dialog id="dialog">
+	<h2>Hello.</h2>
+	<p>A CSS-only modal based on the <a href="https://developer.mozilla.org/es/docs/Web/CSS/::backdrop" target="_blank">::backdrop</a> pseudo-class. Hope you find it helpful.</p>
+	<p>You can also change the styles of the <code>::backdrop</code> from the CSS.</p>
+	<button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+</dialog> -->
+
+
+
+
+
+
                             <li>
                             <a href="cart.html">
                               <i class="fa-solid fa-cart-shopping"></i>
@@ -372,7 +392,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -426,7 +446,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -480,7 +500,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -534,7 +554,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -588,7 +608,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -642,7 +662,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -696,7 +716,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -755,7 +775,7 @@
               <div class="tab-pane fade" id="bestseller-tab-pane" role="tabpanel" aria-labelledby="bestseller-tab"
                 tabindex="0">
                 <div class="product-item-wrap row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -809,7 +829,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -863,7 +883,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -917,7 +937,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -971,7 +991,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -1025,7 +1045,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -1079,7 +1099,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -1133,7 +1153,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -1191,7 +1211,7 @@
               </div>
               <div class="tab-pane fade" id="latest-tab-pane" role="tabpanel" aria-labelledby="latest-tab" tabindex="0">
                 <div class="product-item-wrap row">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -1245,7 +1265,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -1299,7 +1319,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -1353,7 +1373,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -1407,7 +1427,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -1461,7 +1481,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -1515,7 +1535,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
@@ -1569,7 +1589,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
                       <div class="product-img">
                         <a href="shop.html">
