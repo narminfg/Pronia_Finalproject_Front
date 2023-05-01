@@ -49,7 +49,12 @@ $('.brand-carousel').slick({
 $('.blog-carousel').slick({
   slidesToShow: 3,
   arrows:false,
-})
+});
+
+$('.modal-carousel').slick({
+  slidesToShow: 1,
+  arrows:false,
+});
 
 $('.count').counterUp({
   delay:10,
@@ -91,8 +96,8 @@ $(document).ready(function(){
   });
   
   $(document).ready(function() {
-    $('#product-icon').click(function() {
-      $('#product-modal').modal('show');
+    $('.product-icon').click(function() {
+      $('.modal').modal('show');
     });
 
     
