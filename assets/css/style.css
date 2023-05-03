@@ -1850,6 +1850,7 @@ ul {
   border: 1px solid #d6d1d1;
   padding: 25px;
   box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+  height: 414px;
 }
 
 .login-register-area .login-title {
@@ -1915,6 +1916,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 11px;
 
 }
 
