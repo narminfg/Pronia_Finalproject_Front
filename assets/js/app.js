@@ -28,6 +28,13 @@ $('.main-slider-active').slick({
 $('.owl-carousel').slick({
   slidesToShow: 4,
   arrows:false,
+});
+
+$('.ourproduct-carousel').slick({
+  slidesToShow: 4,
+  arrows:true,
+  prevArrow:'<span class="prev"><i class="fa-solid fa-chevron-left"></i></span>',
+  nextArrow: '<span class="next"><i class="fa-solid fa-chevron-right"></i></span>',
 })
 
 $('.testimonial-carousel').slick({

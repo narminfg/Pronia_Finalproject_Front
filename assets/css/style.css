@@ -627,6 +627,17 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
+.ourproduct-area .next.slick-arrow i{
+  position: absolute;
+  top: 38%;
+  left: 100%;
+  cursor: pointer;
+}
+.ourproduct-area .prev.slick-arrow i{
+  position: absolute;
+    top: 171px;
+    left: -7px;
+}
 
 .title-section .title {
   color: #393939;
