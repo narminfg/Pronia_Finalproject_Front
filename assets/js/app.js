@@ -98,7 +98,7 @@ $(document).ready(function(){
   });
   
   $(document).ready(function() {
-    $('.product-icon').click(function() {
+    $('.productModal').click(function() {
       $('.modal').modal('show');
     });
 
