@@ -35,6 +35,7 @@ ul {
   text-decoration: none;
   color: #484a47;
   font-size: 19px;
+  margin-top: 8px;
 }
 
 .header_contact a:hover {
