@@ -1264,9 +1264,7 @@ ul {
     font-size: 15px;
   }
 
-  .login-register-area .login-form {
-    margin-top: 50px;
-  }
+  
 
   .wishlist-area .table .cart_btn a {
     font-size: 9px;
@@ -1843,92 +1841,6 @@ ul {
   background-color: #abd373;
 }
 
-.login-register-area {
-  padding: 68px 0;
-}
-
-.login-register-area .login-form {
-  border: 1px solid #d6d1d1;
-  padding: 25px;
-  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
-  height: 414px;
-}
-
-.login-register-area .login-title {
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: 700;
-  padding-bottom: 20px;
-}
-
-.login-form label {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 12px;
-  font-weight: 500;
-}
-
-.login-form input {
-  width: 100%;
-  border: 1px solid #dee2e6;
-  padding: 10px 20px;
-  font-size: 14px;
-  margin-bottom: 15px;
-  outline: none;
-}
-
-.login-form button {
-  width: 130px;
-  height: 40px;
-  font-size: 13px;
-  background: #abd373;
-  border-color: #abd373;
-  color: #ffffff;
-  border-radius: 23px;
-}
-
-.login-form button:hover {
-  background-color: #505050;
-  color: #ffffff;
-}
-
-.login-form .check-box label {
-  position: relative;
-  padding-left: 30px;
-  line-height: 20px;
-  font-size: 14px;
-  font-weight: 400;
-  display: flex;
-  align-items: baseline;
-  margin-left: -20px;
-  margin-top: 11px;
-}
-
-.login-form .remme_forgotpass .check-box {
-  display: flex;
-}
-
-.login-form .remme_forgotpass .check-box input {
-  width: 15px;
-  margin-top: 15px;
-}
-
-.login-form .remme_forgotpass {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 11px;
-  margin-top: 5px;
-
-}
-
-.login-form .remme_forgotpass .forgot-password_info {
-  margin-left: 147px;
-}
-
-.login-form .remme_forgotpass .forgot-password_info a {
-  color: #525252;
-}
 
 .contact-wrap {
   box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.2);
@@ -3572,4 +3484,109 @@ justify-content: center;
   height: 53px;
   line-height: 50px;
   font-size: 18px;
+}
+.login-area {
+  padding: 68px 0;
+}
+.register-area {
+  padding: 68px 0;
+}
+.login-area .login-form {
+  border: 1px solid #d6d1d1;
+  padding: 25px;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+  height: 414px;
+}
+.login-area .col-lg-6.login{
+  margin-left: 327px;
+}
+.register-area .col-lg-6.register{
+  margin-left: 327px;
+}
+.register-area .login-form {
+  border: 1px solid #d6d1d1;
+  padding: 25px;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+  height: 414px;
+}
+
+.login-area .login-title {
+  font-size: 25px;
+  line-height: 23px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.register-area .login-title {
+  font-size: 25px;
+  line-height: 23px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.login-form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.login-form input {
+  width: 100%;
+  border: 1px solid #dee2e6;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.login-form button {
+  width: 130px;
+  height: 40px;
+  font-size: 13px;
+  background: #abd373;
+  border-color: #abd373;
+  color: #ffffff;
+  border-radius: 23px;
+}
+
+.login-form button:hover {
+  background-color: #505050;
+  color: #ffffff;
+}
+
+.login-form .check-box label {
+  position: relative;
+  padding-left: 30px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: baseline;
+  margin-left: -20px;
+  margin-top: 11px;
+}
+
+.login-form .remme_forgotpass .check-box {
+  display: flex;
+}
+
+.login-form .remme_forgotpass .check-box input {
+  width: 15px;
+  margin-top: 15px;
+}
+
+.login-form .remme_forgotpass {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 11px;
+  margin-top: 5px;
+
+}
+
+.login-form .remme_forgotpass .forgot-password_info {
+  margin-left: 147px;
+}
+
+.login-form .remme_forgotpass .forgot-password_info a {
+  color: #525252;
 }

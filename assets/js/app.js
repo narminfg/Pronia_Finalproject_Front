@@ -101,8 +101,6 @@ $(document).ready(function(){
     $('.productModal').click(function() {
       $('.modal').modal('show');
     });
-
-    
   });
 
   
